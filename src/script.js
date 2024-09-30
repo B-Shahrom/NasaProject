@@ -2,9 +2,9 @@
 var map = L.map('farm-map').setView([0, 0], 2); // Starting view set to world
 
 // Add the OpenStreetMap tiles
-L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-  maxZoom: 19,
-  attribution: '© OpenStreetMap'
+L.tileLayer('https://stamen-tiles.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg', {
+  maxZoom: 18,
+  attribution: 'Map tiles by Stamen Design, under CC BY 3.0. Data by OpenStreetMap, under ODbL.'
 }).addTo(map);
 
 // Placeholder for the farmland marker
