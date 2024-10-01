@@ -1,15 +1,38 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Keep it up!</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farm Map</title>
 
+    <!-- Leaflet CSS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
-    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
-</head>
-<body>
-    <h1>Weather in Your City</h1>
-    <div id="farm-map" style="height: 500px; width: 100%;"></div>
     
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-draw@1.0.4/dist/leaflet.draw.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet-draw@1.0.4/dist/leaflet.draw.js"></script>
+
+
+    <style>
+        /* Ensure the map div has height so the map is visible */
+        #farm-map {
+            height: 500px;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="farm-map"></div>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+
+    <!-- Your custom JavaScript -->
     <script src="src/script.js"></script>
+
 </body>
+
 </html>
