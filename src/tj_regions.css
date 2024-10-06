@@ -1,0 +1,41 @@
+#map {
+  background: transparent;
+  height: 1000px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -200px;
+}
+.leaflet-control-attribution {
+    display: none !important;
+}
+.region-highlight {
+  fill: #3388ff;
+  fill-opacity: 0.3;
+  color: #3388ff;
+}
+
+.region-selected {
+  fill: #ff0000;
+  fill-opacity: 0.5;
+  color: #ff0000;
+}
+
+.blur-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.5); /* Semi-transparent white overlay */
+    pointer-events: none; /* Allow map interactions below */
+    z-index: 999; /* Make sure the overlay is above the map */
+  }
+
+  .leaflet-control-attribution {
+    display: none !important;
+}
+
+/* body{
+  background-color: lightcyan;
+} */
